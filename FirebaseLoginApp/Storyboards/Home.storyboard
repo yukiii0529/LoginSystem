@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="nLx-vz-rmG">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nfn-Jo-7o6" customClass="HomeViewController" customModule="FirebaseLoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qvf-Ir-SwR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7i-ph-6bS">
+                                <rect key="frame" x="88" y="184" width="238" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さんようこそ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVx-JN-1WY">
+                                <rect key="frame" x="146" y="356" width="122.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test01@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxX-N8-DUL">
+                                <rect key="frame" x="136.5" y="400" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作成日：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnG-qQ-NKv">
+                                <rect key="frame" x="172.5" y="441" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYw-Ij-qDH">
+                                <rect key="frame" x="107" y="532" width="200" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.55294117649999996" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="U6G-k1-ckD"/>
+                                    <constraint firstAttribute="width" constant="200" id="unL-gk-R73"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" red="1" green="0.55294117649999996" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.92941176469999998" green="0.94509803920000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedLogoutButton:" destination="nfn-Jo-7o6" eventType="touchUpInside" id="03Z-Mx-Mjj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SYw-Ij-qDH" firstAttribute="top" secondItem="mnG-qQ-NKv" secondAttribute="bottom" constant="70" id="HMp-55-t2W"/>
+                            <constraint firstItem="mnG-qQ-NKv" firstAttribute="top" secondItem="dxX-N8-DUL" secondAttribute="bottom" constant="20" id="MfW-Gz-Xdg"/>
+                            <constraint firstItem="D7i-ph-6bS" firstAttribute="centerX" secondItem="qvf-Ir-SwR" secondAttribute="centerX" id="NTS-7Q-HlC"/>
+                            <constraint firstItem="gVx-JN-1WY" firstAttribute="centerX" secondItem="qvf-Ir-SwR" secondAttribute="centerX" id="USr-aI-8gx"/>
+                            <constraint firstItem="dxX-N8-DUL" firstAttribute="centerX" secondItem="qvf-Ir-SwR" secondAttribute="centerX" id="Yvz-82-dbf"/>
+                            <constraint firstItem="gVx-JN-1WY" firstAttribute="top" secondItem="D7i-ph-6bS" secondAttribute="bottom" constant="100" id="d6m-Fu-cri"/>
+                            <constraint firstItem="SYw-Ij-qDH" firstAttribute="centerX" secondItem="qvf-Ir-SwR" secondAttribute="centerX" id="oq0-Fr-hJW"/>
+                            <constraint firstItem="D7i-ph-6bS" firstAttribute="top" secondItem="M5W-uw-nxH" secondAttribute="top" constant="140" id="qzO-R2-zAx"/>
+                            <constraint firstItem="dxX-N8-DUL" firstAttribute="top" secondItem="gVx-JN-1WY" secondAttribute="bottom" constant="20" id="wKm-z2-rnt"/>
+                            <constraint firstItem="mnG-qQ-NKv" firstAttribute="centerX" secondItem="qvf-Ir-SwR" secondAttribute="centerX" id="zw7-ds-yjM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M5W-uw-nxH"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="mnG-qQ-NKv" id="Wmq-fR-SHU"/>
+                        <outlet property="emailLabel" destination="dxX-N8-DUL" id="g99-tE-Kbv"/>
+                        <outlet property="logoutButton" destination="SYw-Ij-qDH" id="m9t-6E-dXW"/>
+                        <outlet property="nameLabel" destination="gVx-JN-1WY" id="eWT-f5-OQ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAb-js-Yty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="192"/>
+        </scene>
+    </scenes>
+</document>
